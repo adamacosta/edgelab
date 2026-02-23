@@ -2,6 +2,16 @@
 
 ## Initial Setup
 
+### Start ssh tunnel
+
+Because the Harvester LAN is not routeable from the home LAN, we need to create an ssh tunnel through the gateway host, since it is dual-homed in both networks.
+
+```sh
+sshuttle -r rancher@mgmt-0.localdomain 10.240.0.0/16
+```
+
+The DNS record for `mgmt-0.localdomain` is created automatically by my OPNSense router when the host first gets its DHCP lease.
+
 ### Download kubeconfig
 
 ![harvester support](./static/kubeconfig.png)
