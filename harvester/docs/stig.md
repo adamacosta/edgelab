@@ -1,9 +1,9 @@
 # STIG Hardening
 
 Combination of STIGs already approved by DISA for:
-- SL Micro
-- RKE2
-- Rancher
+- [SL Micro](https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_SLEM_5_V1R3_STIG.zip)
+- [RKE2](https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_RGS_RKE2_V2R5_STIG.zip)
+- [Rancher](https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_RGS_MCM_V2R2_STIG.zip)
 
 SL Micro STIG is approved for 5 but still in draft status for 6.
 
