@@ -1,0 +1,9 @@
+.DS_store
+**/*.iso
+**/*.img
+**/*.raw
+**/*.qcow2
+**/*.key
+**/rke2.yaml
+**/k3s.yaml
+**/*.env
