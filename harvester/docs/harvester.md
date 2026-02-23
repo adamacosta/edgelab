@@ -91,3 +91,16 @@ kubectl create -f manifests/suse-vlan20.yaml
 kubectl create -f manifests/ubuntu-import.yaml
 kubectl logs -n harvester-system -l app.kubernetes.io/name=harvester-vm-import-controller -f
 ```
+
+## Cleanup
+
+```sh
+kubectl delete virtualmachines -n demo --all
+kubectl delete pvc -n demo --all
+kubectl delete secret -n demo --all
+kubectl delete virtualmachineimage -n demo --all
+kubectl delete network-attachment-definitions -n demo --all
+kubectl delete ns demo
+kubectl delete vlanconfig vmnet
+kubectl delete clusternetwork vmnet
+```
