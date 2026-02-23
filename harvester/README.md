@@ -8,3 +8,4 @@
   - Setup network(s)
   - Create VM(s)
   - Import VM from OVA
+  - Use third-party storage provisioner
