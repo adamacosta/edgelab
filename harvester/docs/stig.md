@@ -7,7 +7,7 @@ Combination of STIGs already approved by DISA for:
 
 SL Micro STIG is approved for 5 but still in draft status for 6.
 
-## Hardening Process
+## OS Hardening
 
 SL Micro is an immutable operating system customized by the Elemental Toolkit.
 
@@ -259,3 +259,7 @@ stages:
         # HAOS-01-000136
         - sed -i 's/NOPASSWD/PASSWD/g' /etc/sudoers
 ```
+
+## Kubernetes Hardening
+
+RKE2 is FIPS-validated out of the box and comes with automated CIS-profile enforcement. See [CIS hardening guide](https://docs.rke2.io/security/hardening_guide) for actions to take on the host OS, which Elemental takes care of for you in the case of Harvester.
