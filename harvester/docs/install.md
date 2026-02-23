@@ -2,7 +2,7 @@
 
 ## Artifacts
 
-ISO and PXE artifacts both available from <portal.ranchercarbide.dev/product/harvester>
+ISO and PXE artifacts both available from <https://portal.ranchercarbide.dev/product/harvester>
 
 Clickable download buttons generate pre-signed URLs to download from Amazon S3 in US GovCloud.
 
