@@ -77,7 +77,10 @@ kubectl create -f manifests/network.yaml
 
 ```sh
 kubectl create -f manifests/opensuse-leap-image.yaml
-kubectl wait --for=condition=Imported -n demo virtualmachineimages/opensuse-leap-15-6
+kubectl wait --for=condition=Imported \
+  --namespace demo \
+  --timeout=300s \
+  virtualmachineimages/opensuse-leap-15-6
 ```
 
 ```sh
